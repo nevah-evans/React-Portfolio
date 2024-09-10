@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import Navigation from './Navigation.jsx';
-import Header from './Header.jsx';
-import About from './About.jsx';
-import Project from './Project.jsx';
-import Contact from './Contact.jsx';
-import Resume from './Resume.jsx';
+// import Header from './Header.jsx';
+import About from './pages/About.jsx';
+import Project from './pages/Project.jsx';
+import Contact from './pages/Contact.jsx';
+import Resume from './pages/Resume.jsx';
 
 
 export default function Body() {
@@ -12,15 +12,15 @@ export default function Body() {
 
     const renderPage= () => {
         if (currentPage === 'About') {
-            return <About />
+            return <About />;
         }
         if (currentPage === 'Portfolio') {
-            return <Project />
+            return <Project />;
         }
         if (currentPage === 'Contact') {
-            return <Contact />
+            return <Contact />;
         }
-        return <Resume />
+        return <Resume />;
     };
 
     const handlePageChange = (page) => setCurrentPage(page);
@@ -28,7 +28,7 @@ export default function Body() {
     return (
     <div>
         <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-        <Header />
+        {/* <Header /> */}
         <main className='mx- 3'>{renderPage()}</main>
     </div>
     );

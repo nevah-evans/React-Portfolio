@@ -1,13 +1,27 @@
-// import Navigation from './components/Navigation.jsx'
+import { useState } from "react";
 
-// function Header(){ 
-// return (
-// <>
-// <div>
+export default function Header() {
+  const [currentPage, setCurrentPage] = useState();
 
-// </div>
-// </>
-// )
-// }
+  const renderHeader = () => {
+    if (currentPage === "About") {
+      return <h1>About Me</h1>;
+    }
+    if (currentPage === "Portfolio") {
+      return <h1>My Portfolio</h1>;
+    }
+    if (currentPage === "Contact") {
+      return <h1>Contact Me</h1>;
+    }
+    return <h1>MY Resume</h1>;
+  };
 
-// export default Header;
+  const handlePageChange = (page) => setCurrentPage(page);
+
+  return (
+    <div>
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      <main>{renderHeader()}</main>
+    </div>
+  );
+}
