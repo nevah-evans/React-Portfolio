@@ -3,9 +3,15 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --pink: #ffd3dd;
+  --lilac: #cca1c9;
+  --mauve: #f3a0ad;
+  --sky: #bed1e3;
+  --denim: #92a1c3;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #686868;
+  /* text-shadow:  -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; */
+  background-color: var(--pink);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,7 +19,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -28,41 +34,52 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+} */
+.Banner {
+  display: flex;
+  justify-content: space-evenly;  
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin-right: 300px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+h3 {
+  font-size: 1.5em;
+  padding: 20px;
+  margin: 0px 10px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+#about-me{
+background-color: var(--lilac);
+border-radius: 15px 15px 0px 0px;
+
 }
+
+#portfolio{
+  background-color: var(--mauve);
+  border-radius: 15px 15px 0px 0px;
+}
+
+#contact-me{
+  background-color: var(--sky);
+  border-radius: 15px 15px 0px 0px;
+}
+
+#resume{
+  background-color: var(--denim);
+  border-radius: 15px 15px 0px 0px;
+}
+
+
+
+/* :root {
+  --pink: #ffd3dd;
+  --lilac: #cca1c9;
+  --mauve: #f3a0ad;
+  --sky: #bed1e3;
+  --denim: #92a1c3;
+background-color: var(--pink);
+} */
