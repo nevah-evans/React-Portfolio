@@ -1,17 +1,18 @@
 import { Link, useLocation} from 'react-router-dom';
+import '../index.css';
 
 function Nav() {
     const currentPage = useLocation().pathname;
 
   return (
     
-    <div>
+    <div id='banner'>
       <Link to='/'
                 className={
                   currentPage === "Home" ? "nav-link active" : "nav-link"
                 }
               >
-        Nevah Evans
+        <h1 id='name'>Nevah Evans</h1>
      </Link>
 
         <ul className="nav nav-tabs">
@@ -22,7 +23,7 @@ function Nav() {
                   currentPage === "About" ? "nav-link active" : "nav-link" 
                 } 
               >
-                About Me
+                <h3 id='about-me'>About Me</h3>
               </Link>
           </li>
 
@@ -32,7 +33,7 @@ function Nav() {
                   currentPage === "Projects" ? "nav-link active" : "nav-link"
                 }
               >
-                Projects
+                <h3 id='projects'>Projects</h3>
               </Link>
           </li>
 
@@ -42,7 +43,7 @@ function Nav() {
                   currentPage === "Contact" ? "nav-link active" : "nav-link"
                 }
               >
-                Contact Me
+                <h3 id='contact-me'>Contact Me</h3>
               </Link>
           </li>
 
@@ -52,7 +53,7 @@ function Nav() {
                   currentPage === "Resume" ? "nav-link active" : "nav-link"
                 }
               >
-                Resume
+                <h3 id='resume'>Resume</h3>
               </Link>
           </li>
 
