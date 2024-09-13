@@ -1,7 +1,10 @@
+import Header from '../Header';
+
 export default function About() {
     return (
-        <div>
-            <h1>About Me</h1>
+    
+        <div id="about-me-page">
+            <Header />
             <p>
               Hello there! My name is Nevah. I am a new full stack web developer. 
               I transitioned from the medical field into tech and excited to see where the future of technology will lead us!

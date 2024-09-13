@@ -12,12 +12,12 @@ function Nav() {
                   currentPage === "Home" ? "nav-link active" : "nav-link"
                 }
               >
-        <h1 id='name'>Nevah Evans</h1>
+        <h1>Nevah Evans</h1>
      </Link>
 
         <ul className="nav nav-tabs">
 
-          <li className="nav-item">
+          <li className="nav-item" id='about-me'>
               <Link to='/About'
                 className={
                   currentPage === "About" ? "nav-link active" : "nav-link" 
@@ -27,7 +27,7 @@ function Nav() {
               </Link>
           </li>
 
-          <li className="nav-item">
+          <li className="nav-item" id='projects'>
               <Link to='/Projects'
                 className={
                   currentPage === "Projects" ? "nav-link active" : "nav-link"
@@ -37,7 +37,7 @@ function Nav() {
               </Link>
           </li>
 
-          <li className="nav-item">
+          <li className="nav-item" id='contact-me'>
               <Link to='/Contact'
                 className={
                   currentPage === "Contact" ? "nav-link active" : "nav-link"
@@ -47,7 +47,7 @@ function Nav() {
               </Link>
           </li>
 
-          <li className="nav-item">
+          <li className="nav-item" id='resume'>
               <Link to='/Resume'
                 className={
                   currentPage === "Resume" ? "nav-link active" : "nav-link"

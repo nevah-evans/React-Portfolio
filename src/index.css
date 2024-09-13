@@ -2,21 +2,25 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  
+  --raisin: #5f5d5d;
   --pink: #ffd3dd;
   --lilac: #cca1c9;
   --mauve: #f3a0ad;
   --sky: #bed1e3;
   --denim: #92a1c3;
   color-scheme: light dark;
-  /* color: black; */
-  color: #686868;
+  color: var(--raisin);
   background-color: var(--pink);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root{
+  background-color: var(--pink);
 }
 
 ul {
@@ -27,15 +31,25 @@ ul {
 #banner {
   display: flex;
   justify-content: space-evenly;
+  background-color: var(--pink);
 }
 
 h1 {
+  color: var(--raisin);
   font-size: 3.2em;
   line-height: 1.1;
   margin-right: 300px;
 }
 
+h2{
+  color: var(--raisin);
+display: flex;
+justify-content: center;
+padding-top: 10px;
+}
+
 h3 {
+  color: var(--raisin);
   font-size: 1.5em;
   padding: 20px;
   margin: 0px 10px;
@@ -43,20 +57,81 @@ h3 {
 
 #about-me {
   background-color: var(--lilac);
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 25px 25px 0px 0px;
 }
 
 #projects {
   background-color: var(--mauve);
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 25px 25px 0px 0px;
 }
 
 #contact-me {
   background-color: var(--sky);
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 25px 25px 0px 0px;
 }
 
 #resume {
   background-color: var(--denim);
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+p{
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+}
+
+#icons{
+  background-color: var(--pink);
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+#github{
+  margin: 0px 40px;
+
+}
+
+#linkedIn{
+  margin: 0px 40px;
+}
+
+a:link{
+  color: var(--sky);
+}
+
+a:visited{
+  color: var(--raisin);
+}
+
+#about-me-page{
+background-color: var(--lilac);
+border-radius: 25px;
+box-shadow: 5px 5px 0px 0px #5f5d5d;
+}
+
+#projects-page{
+  background-color: var(--mauve);
+  border-radius: 25px;
+  box-shadow: 5px 5px 0px 0px #5f5d5d;
+}
+
+#contact-page{
+  background-color: var(--sky);
+  border-radius: 25px;
+  box-shadow: 5px 5px 0px 0px #5f5d5d;
+}
+
+#resume-page{
+  background-color: var(--denim);
+  border-radius: 25px;
+  box-shadow: 5px 5px 0px 0px #5f5d5d;
+
+}
+
+#home-page{
+  background-color: var(--pink);
+  border-radius: 25px;
+  box-shadow: 5px 5px 0px 0px #5f5d5d;
 }

@@ -1,7 +1,9 @@
+import Header from "../Header";
+
 export default function Resume () {
     return (
-        <div>
-            <h1>Resume</h1>
+        <div id="resume-page">
+            <Header />
             <p>
                 Resume coming soon!
             </p>
