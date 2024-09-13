@@ -3,7 +3,7 @@ export default function Resume () {
         <div>
             <h1>Resume</h1>
             <p>
-                This is the Resume part of the portfolio.
+                Resume coming soon!
             </p>
         </div>
     );

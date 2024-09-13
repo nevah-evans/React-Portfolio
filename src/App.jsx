@@ -1,6 +1,15 @@
-import "./App.css";
-import Body from "./components/Body.jsx";
+import { Outlet } from "react-router-dom";
+import Nav from "./components/Nav";
 
-const App = () => <Body />;
+function App() {
+  return (
+    <>
+      <Nav />
+      <main className="mx-3">
+        <Outlet />
+      </main>
+    </>
+  );
+}
 
 export default App;

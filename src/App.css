@@ -3,12 +3,6 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  --pink: #ffd3dd;
-  --lilac: #cca1c9;
-  --mauve: #f3a0ad;
-  --sky: #bed1e3;
-  --denim: #92a1c3;
-  /* background-color: var(--pink); */
 }
 
 .logo {
@@ -46,16 +40,3 @@
 .read-the-docs {
   color: #888;
 }
-
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
- --pink: #ffd3dd;
- --lilac: #cca1c9;
- --mauve: #f3a0ad;
- --sky: #bed1e3;
- --denim: #92a1c3;
- background-color: var(--pink);
-} */

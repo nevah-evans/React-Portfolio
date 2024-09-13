@@ -3,7 +3,7 @@ export default function Contact () {
         <div>
             <h1>Contact Me</h1>
             <p>
-                This is the Contact part of the portfolio.
+                This is the Contact page of the portfolio.
             </p>
         </div>
     );
