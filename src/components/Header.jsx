@@ -5,9 +5,6 @@ const Header = () => {
     const currentPage = useLocation().pathname;
     
     if (currentPage === '/'){
-        return <h2>Home Page</h2>
-    }
-    else if (currentPage === '/About'){
         return <h2>About Me</h2>
     }
     else if (currentPage === '/Projects'){
