@@ -1,33 +1,48 @@
 import Header from "../Header";
+import { useState } from "react";
 
 export default function Contact() {
+
+const submitForm = (e) => {
+  e.preventDefault()
+ 
+  const formData = new FormData(e.target)
+  const payload = Object.fromEntries(formData)
+
+  console.log(payload);
+}
+
   return (
     <div id="contact-page">
       <Header />
 
-      <form id="form">
-        <div class="row input-group">
-          <label class="col-name-label">Name</label>
-          <div class="col-sm-3">
-          <input type="text" aria-label="name" class="form-control"></input>
+      <form onSubmit={submitForm} id="form" className="needs-validation">
+        <div className="row input-group">
+          <label htmlFor="name" className="col-name-label">Name</label>
+          <div className="col-sm-3 was-validated">
+          <input type="text" aria-label="name" name="name" className="form-control" required></input>
+          <div className="invalid-feedback">Please enter your name!</div>
           </div>
         </div>
 
-        <div class="row mb-6">
-          <label for="email" class="col-form-label">Email Address</label>
-          <div class="col-sm-3">
-            <input type="email" class="form-control" id="email"></input>
+        <div className="row mb-6">
+          <label htmlFor="email" className="col-form-label">Email Address</label>
+          <div className="col-sm-3 was-validated">
+            <input type="email" name="email" className="form-control" id="email" required></input>
+            <div className="invalid-feedback">Please enter a valid email!</div>
           </div>
         </div>
 
-        <div class="row input-group">
-          <label class="col-message-label">Message</label>
-          <div class="col-sm-3">
-          <textarea class="form-control" aria-label="Message"></textarea>
+        <div className="row input-group">
+          <label htmlFor="message" className="col-message-label">Message</label>
+          <div className="col-sm-3 was-validated">
+          <textarea className="form-control" name="message" aria-label="Message" required></textarea>
+          <div className="invalid-feedback">Please enter a message!</div>
+
         </div>
         </div>
 
-        <div class="col-sm-3">
+        <div className="col-sm-3">
         <button type="submit" id="submit">Submit</button>
         </div>
 

@@ -3,7 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
   
-  --raisin: #5f5d5d;
+  --raisin: #444343;
   --pink: #ffd3dd;
   --lilac: #cca1c9;
   --mauve: #f3a0ad;
@@ -79,6 +79,7 @@ p{
   display: flex;
   justify-content: center;
   padding: 10%;
+  font-size: 20px;
 }
 
 #icons{
@@ -143,10 +144,11 @@ margin-bottom: 10px;
 #form{
 padding: 45px;
 font-size: 20px;
+color: var(--raisin);
 }
 
 #submit{
   margin: 10px;
   background-color: var(--mauve);
-  color: white;
+  color: var(--raisin);
 }
