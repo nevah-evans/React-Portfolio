@@ -109,18 +109,21 @@ a:visited{
 background-color: var(--lilac);
 border-radius: 25px;
 box-shadow: 5px 5px 0px 0px #5f5d5d;
+margin-bottom: 10px;
 }
 
 #projects-page{
   background-color: var(--mauve);
   border-radius: 25px;
   box-shadow: 5px 5px 0px 0px #5f5d5d;
+  margin-bottom: 10px;
 }
 
 #contact-page{
   background-color: var(--sky);
   border-radius: 25px;
   box-shadow: 5px 5px 0px 0px #5f5d5d;
+  margin-bottom: 10px;
 }
 
 #resume-page{
@@ -134,4 +137,16 @@ box-shadow: 5px 5px 0px 0px #5f5d5d;
   background-color: var(--pink);
   border-radius: 25px;
   box-shadow: 5px 5px 0px 0px #5f5d5d;
+  margin-bottom: 10px;
+}
+
+#form{
+padding: 45px;
+font-size: 20px;
+}
+
+#submit{
+  margin: 10px;
+  background-color: var(--mauve);
+  color: white;
 }
