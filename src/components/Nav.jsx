@@ -7,18 +7,13 @@ function Nav() {
   return (
     
     <div id='banner'>
-      <Link to='/'
-                className={
-                  currentPage === "Home" ? "nav-link active" : "nav-link"
-                }
-              >
+  
         <h1>Nevah Evans</h1>
-     </Link>
 
         <ul className="nav nav-tabs">
 
           <li className="nav-item" id='about-me'>
-              <Link to='/About'
+              <Link to='/'
                 className={
                   currentPage === "About" ? "nav-link active" : "nav-link" 
                 } 
